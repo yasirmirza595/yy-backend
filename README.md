@@ -1,58 +1,81 @@
 # Y&Y Automotive - Backend
 
-Node.js + Express backend for Y&Y Automotive workshop booking system.
+This is the **backend API** for **Y&Y Automotive**, a modern workshop booking and management system.  
+Built with **Node.js + Express**, it provides REST APIs for user authentication, service listings, and booking management.  
 
-## 🚀 Demo
-- Live API: https://your-backend-live-link.com *(coming soon if not deployed)*
-- Example Endpoint: `/api/bookings`
+---
+
+## 🌐 Live API
+- 🔗 Base URL: https://your-backend-live-link.com *(replace with deployed link if available)*  
+- Example Endpoint: `GET /api/bookings`
+
+---
+
+## 📸 Screenshot
+![API Screenshot](./assets/backend-screenshot.png)
+
+*(Add a Postman screenshot or terminal log showing a sample API response.)*
+
+---
 
 ## ✨ Features
-- User authentication (JWT)
-- Booking management (CRUD)
-- Workshop services API
-- MongoDB integration
-- Secure password hashing
+- User authentication with **JWT**  
+- Workshop services API (CRUD)  
+- Booking management (create, update, cancel)  
+- Secure password hashing with **bcrypt**  
+- MongoDB database with **Mongoose**  
 
-## 🛠 Tech Stack
-- Node.js
-- Express
-- MongoDB + Mongoose
-- JWT Authentication
-- bcrypt
+---
 
-## ⚙️ Setup (local)
+## 🛠️ Tech Stack
+- **Node.js**  
+- **Express.js**  
+- **MongoDB + Mongoose**  
+- **JWT Authentication**  
+- **bcrypt**  
+- **CORS** enabled  
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the repo
 ```bash
-# clone
 git clone https://github.com/yasirmirza595/yy-backend.git
 cd yy-backend
-
-# install dependencies
-npm install
-
-# run (dev mode)
-npm run dev
-📂 Folder Structure
+2. Install dependencies
 bash
 Copy code
-/src
-  /controllers
-  /models
-  /routes
-  /middlewares
-  server.js
-🚢 Deployment
-Deployed on (Render / Railway / Vercel / Heroku) — update once deployed
+npm install
+3. Setup environment variables
+Create a .env file in the root and add:
 
-📸 Screenshot (optional)
+ini
+Copy code
+MONGO_URI=your-mongodb-connection-string
+JWT_SECRET=your-secret-key
+PORT=5000
+4. Run the server
+bash
+Copy code
+npm run dev
+Server will start at 👉 http://localhost:5000
 
-
-(Take a Postman test screenshot e.g., GET /api/bookings and place it in assets/)
-
-🏷 Repo Topics
-nodejs, express, mongodb, jwt, api, mern
+📂 Folder Structure
+csharp
+Copy code
+yy-backend/
+  ├── src/
+  │   ├── controllers/   # Business logic
+  │   ├── models/        # Mongoose schemas
+  │   ├── routes/        # API routes
+  │   ├── middlewares/   # Auth & error handlers
+  │   └── server.js      # App entry point
+  ├── .env.example       # Example env vars
+  ├── package.json       # Dependencies & scripts
+🚀 Deployment
+Deployed on: Render / Railway / Vercel / Heroku (choose your platform)
 
 📜 License
-MIT © Yasir Mirza
-
-yaml
-Copy code
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute with attribution.

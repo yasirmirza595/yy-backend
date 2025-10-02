@@ -14,7 +14,6 @@ Built with **Node.js + Express**, it provides REST APIs for user authentication,
 ## 📸 Screenshot
 ![API Screenshot](./assets/backend-screenshot.png)
 
-*(Add a Postman screenshot or terminal log showing a sample API response.)*
 
 ---
 

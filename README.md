@@ -6,7 +6,7 @@ Built with **Node.js + Express**, it provides REST APIs for user authentication,
 ---
 
 ## 🌐 Live API
-- 🔗 Base URL: [https://your-backend-live-link.com](https://yy-backend.onrender.com/) *(replace with deployed link if available)*  
+- 🔗 Base URL: [https://your-backend-live-link.com](https://yy-backend.onrender.com/) *  
 - Example Endpoint: `GET /api/bookings`
 
 ---
